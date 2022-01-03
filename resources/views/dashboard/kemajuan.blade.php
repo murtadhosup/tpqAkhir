@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TPQ Digital</title>
+    <title>TPQ AL-MUBAROQ</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sb-admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -49,8 +49,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <a href="/dashboard/kemajuan/form" class="btn btn-sm btn-primary mb-3">Tambah Data
-                                Kemajuan</a>
+                            <a href="/dashboard/kemajuan/form" class="btn btn-sm btn-primary mb-3">Tambah Kemajuan</a>
                             <table id="table_id" class="display">
                                 <thead>
                                     <tr>
@@ -72,7 +71,7 @@
                                             <a href="/dashboard/kemajuan/hapus/{{ $kemajuan->id_kemajuan }}"
                                                 class="btn btn-danger btn-sm">Hapus</a>
                                             <a href="/dashboard/kemajuan/form/{{ $kemajuan->id_kemajuan }}"
-                                                class="btn btn-warning btn-sm">Edit</a>
+                                                class="btn btn-warning btn-sm">Update</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -90,9 +89,7 @@
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
+                   
                 </div>
             </footer>
             <!-- End of Footer -->
@@ -114,12 +111,12 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Apakah anda  yakin untuk logout?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="/dashboard/logout">Logout</a>

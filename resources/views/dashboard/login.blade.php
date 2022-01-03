@@ -15,13 +15,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-    <title>TPQ AT-TAQWA</title>
+    <title>AL-MUBAROQ</title>
   </head>
      <!-- navbar -->
      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-              <h3>TPQ AT-TAQWA</h3>
+         
+              <h3>TPQ AL-MUBAROQ</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,7 +50,9 @@
     <!-- navbar end -->
     <style>
         form {
-    border: 3px solid #f1f1f1;
+          max-width: 500px;
+    border: 3px solid hsl(0, 0%, 100%);
+   margin: 100px auto;
 }
 
 input[type=text], input[type=password] {
@@ -113,7 +116,7 @@ span.psw {
 
 body{
     height: 100vh;
-    background-image: url(https://image.freepik.com/free-photo/minaret-with-clouds-background_1353-202.jpg);
+    background-color: hsl(228, 8%, 65%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,15 +131,15 @@ body{
 @csrf
   <div class="container">
     <h2 style="text-align: center">Login Form</h2>
-    <label><b>Username</b></label>
+    <label><b style="color: #000000">Username</b></label>
     <input type="text" placeholder="Enter Username" name="email" required>
 
-    <label><b>Password</b></label>
+    <label><b style="color: rgb(0, 0, 0)">Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
 
     <button type="submit">Login</button>
     <p> Belum punya akun?
-        <a  href="/register">Registrasi di sini</a>
+        <a  href="/register">Registrasi </a>
     </p>
   </div>
 </form>

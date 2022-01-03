@@ -58,30 +58,38 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="/dashboard/buku/tambah">
+                    <form method="POST" action="/dashboard/detailperan/tambah">
                     @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="title">Judul Buku</label>
-                                    <input type="text" class="form-control" id="title" name="buku">
+                                    <label for="peran">ID Peran</label>
+                                    <select class="form-control" id="id_peran" name="id_peran" required>
+                                        <option value=""></option>
+                                        @foreach ($peran as $peran)
+                                        <option value="{{ $peran->id_peran }}">{{ $peran->id_peran }}
+                                        </option>
+                                        @endforeach
+                                    </select>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="deskripsi">Deskrisi</label>
-                                    <input type="text" class="form-control" id="deskripsi" name="keterangan">
+                                    <label for="pengurus">ID Pengurus</label>
+                                    <select class="form-control" id="id_pengurus" name="id_pengurus" required>
+                                        <option value=""></option>
+                                        @foreach ($pengurus as $pengurus)
+                                        <option value="{{ $pengurus->id_pengurus }}">{{ $pengurus->id_pengurus }}
+                                        </option>
+                                        @endforeach
+                                    </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="penulis">Penulis</label>
-                                    <input type="text" class="form-control" id="penulis" name="penulis">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tahun_terbit">Tahun Terbit</label>
-                                    <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
-                                </div>
+                                
                             </div>
-                            
+
+                            <div class="col-lg-6">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm ml-3">Submit</button>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->

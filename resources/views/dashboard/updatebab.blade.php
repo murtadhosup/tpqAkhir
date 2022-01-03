@@ -37,8 +37,8 @@
             <!-- Main Content -->
             <div id="content">
 
-            <!-- include topbar -->
-            @include('partial.topbar')
+                <!-- include topbar -->
+                @include('partial.topbar')
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -49,39 +49,49 @@
                     </div>
 
                     @if (count($errors) > 0)
-                         <div class="alert alert-danger">
-                             <ul>
-                             @foreach ($errors->all() as $error)
-                                 <li>{{ $error }}</li>
-                             @endforeach
-                             </ul>
-                        </div>
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @endif
 
-                    <form method="POST" action="/dashboard/buku/tambah">
-                    @csrf
+                    <form method="POST" action="/dashboard/bab/update/{{ $bab->id_bab }}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="title">Judul Buku</label>
-                                    <input type="text" class="form-control" id="title" name="buku">
+                                    <label for="buku"> id Buku</label>
+                                    <select class="form-control" id="id_santri" name="id_santri" required>
+                                        <option value=""></option>
+                                        @foreach ($santris as $buku)
+                                        <option value="{{ $buku->id_buku }}" {{ $bab->id_buku ==
+                                            $buku->id_buku ? 'selected' : '' }}>
+                                            {{ $buku->id_buku }}
+                                        </option>
+                                        @endforeach
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="deskripsi">Deskrisi</label>
-                                    <input type="text" class="form-control" id="deskripsi" name="keterangan">
-                                </div>
-                                <div class="form-group">
-                                    <label for="penulis">Penulis</label>
-                                    <input type="text" class="form-control" id="penulis" name="penulis">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tahun_terbit">Tahun Terbit</label>
-                                    <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
+                                    <label for="bab">Bab</label>
+                                    <input type="text" class="form-control" id="bab" name="bab" value="{{$bab['bab']}}">
                                 </div>
                             </div>
-                            
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="judul">Judul</label>
+                                    <input type="text" class="form-control" id="judul" name="judul" value="{{$bab['judul']}}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="keterangan">Keterangan</label>
+                                    <input type="text" class="form-control" id="keterangan" name="keterangan" value="{{$bab['keterangan']}}">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm ml-3">Update</button>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->
@@ -92,7 +102,7 @@
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
-                    
+                  
                 </div>
             </footer>
             <!-- End of Footer -->

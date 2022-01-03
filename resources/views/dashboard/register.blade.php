@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-    <title>TPQ Digital</title>
+    <title>TPQ AL-MUBAROQ</title>
   </head>
      <!-- navbar -->
      <nav class="navbar navbar-expand-lg navbar-light">
@@ -122,7 +122,7 @@ body{
 </head>
 <body>
 
-<h2 style="text-align: center">Registrasi Form</h2>
+<h2 style="text-align: center"> Form Registrasi</h2>
 
 <form method="POST" action="/dashboard/login/authenticate">
 @csrf

@@ -8,7 +8,22 @@ use Illuminate\Database\Eloquent\Model;
 class Peran extends Model
 {
     use HasFactory;
-
-    protected $table = "peran";
+    protected $table = 'peran'; 
     protected $primaryKey = "id_peran";
+    public $incrementing = false;
+    protected $fillable = [
+        'id_peran', 'peran' , 'aktif'
+    ];
+    
+
+    // use HasFactory;
+
+    // protected $table = 'santri';
+    // protected $primaryKey = 'id_santri';
+    // public $incrementing = false;
+
+    // protected $fillable = [
+    //     'nama_santri', 'gender', 'tgl_lahir', 'kota_lahir', 'nama_ortu', 'alamat_ortu', 'hp', 'email', 'password', 'tgl_masuk', 'aktif'
+    // ];
+    
 }

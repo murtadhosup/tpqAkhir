@@ -7,6 +7,7 @@ use App\Models\Pengurus;
 use App\Models\Santri;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\QueryException;
 
 class KemajuanController extends Controller
 {

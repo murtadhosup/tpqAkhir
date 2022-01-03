@@ -7,7 +7,7 @@ use App\Models\DetailKemajuan;
 use App\Models\Kemajuan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Database\QueryException;
 class DetailKemajuanController extends Controller
 {
     public function index()

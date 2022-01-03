@@ -11,4 +11,5 @@ class DetailPeran extends Model
 
     protected $table = "detail_peran";
     protected $primaryKey = "id_detail_peran";
+    protected $fillable = ['id_peran','id_pengurus'];
 }

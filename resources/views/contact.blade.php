@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-    <title>TPQ Digital</title>
+    <title>TPQ AL-MUBAROQ</title>
   </head>
   <body>
 
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-              <h3>TPQ Digital</h3>
+              <h3>TPQ AL-MUBAROQ</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

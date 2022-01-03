@@ -58,30 +58,32 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="/dashboard/buku/tambah">
+                    <form method="POST" action="/dashboard/peran/update/{{$data['id_peran']}}">
                     @csrf
                         <div class="row">
                             <div class="col-lg-6">
+                               
                                 <div class="form-group">
-                                    <label for="title">Judul Buku</label>
-                                    <input type="text" class="form-control" id="title" name="buku">
+                                <label for="peran">Peran</label>
+                                        <input type="text" class="form-control" id="peran" name="peran" value="{{ $data['peran'] }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="deskripsi">Deskrisi</label>
-                                    <input type="text" class="form-control" id="deskripsi" name="keterangan">
+                                    <label for="peran">Aktif</label>
+                                    <select class="form-control" id="aktif" name="aktif" value="{{ $data['aktif'] }}">
+                                        <option>Y</option>
+                                        <option>N</option>
+                                        </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="penulis">Penulis</label>
-                                    <input type="text" class="form-control" id="penulis" name="penulis">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tahun_terbit">Tahun Terbit</label>
-                                    <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
-                                </div>
+
+                                
+
+                                
                             </div>
-                            
+
+                            <div class="col-lg-6">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm ml-3">Submit</button>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->

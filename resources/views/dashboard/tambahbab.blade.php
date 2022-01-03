@@ -58,30 +58,49 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="/dashboard/buku/tambah">
+                    <form method="POST" action="/dashboard/bab/tambah">
                     @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="title">Judul Buku</label>
-                                    <input type="text" class="form-control" id="title" name="buku">
+                                    <label for="buku">ID Buku</label>
+                                    <select class="form-control" id="id_buku" name="id_buku" required>
+                                        <option value=""></option>
+                                        @foreach ($buku as $buku)
+                                        <option value="{{ $buku->id_buku }}">{{ $buku->id_buku }}
+                                        </option>
+                                        @endforeach
+                                    </select>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="deskripsi">Deskrisi</label>
-                                    <input type="text" class="form-control" id="deskripsi" name="keterangan">
-                                </div>
-                                <div class="form-group">
-                                    <label for="penulis">Penulis</label>
-                                    <input type="text" class="form-control" id="penulis" name="penulis">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tahun_terbit">Tahun Terbit</label>
-                                    <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
-                                </div>
+                                    <label for="bab">Bab</label>
+                                            <input type="text" class="form-control" id="bab" name="bab">
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="judul">Judul</label>
+                                                <input type="text" class="form-control" id="judul" name="judul">
+                                            
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="keterangan">Keterangan</label>
+                                                    <input type="text" class="form-control" id="keterangan" name="keterangan">
+                                                
+                                            </div>
+                                
+
+                                
+
+                                
                             </div>
-                            
+
+                            <div class="col-lg-6">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm ml-3">Submit</button>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->

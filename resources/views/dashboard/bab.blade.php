@@ -47,42 +47,42 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="/dashboard/bab/form" class="btn btn-sm btn-primary mb-3">Tambah Bab</a>
+                        <table id="table_id" class="display">
+                            <thead>
+                                <tr>
+                                    <th>Id Bab</th>
+                                    <th>Id Buku</th>
+                                    <th>Bab</th>
+                                    <th>Judul</th>
+                                    <th>Keterangan</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                    @if (count($errors) > 0)
-                         <div class="alert alert-danger">
-                             <ul>
-                             @foreach ($errors->all() as $error)
-                                 <li>{{ $error }}</li>
-                             @endforeach
-                             </ul>
-                        </div>
-                    @endif
 
-                    <form method="POST" action="/dashboard/buku/tambah">
-                    @csrf
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="title">Judul Buku</label>
-                                    <input type="text" class="form-control" id="title" name="buku">
-                                </div>
-                                <div class="form-group">
-                                    <label for="deskripsi">Deskrisi</label>
-                                    <input type="text" class="form-control" id="deskripsi" name="keterangan">
-                                </div>
-                                <div class="form-group">
-                                    <label for="penulis">Penulis</label>
-                                    <input type="text" class="form-control" id="penulis" name="penulis">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tahun_terbit">Tahun Terbit</label>
-                                    <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit">
-                                </div>
-                            </div>
-                            
+                                <?php foreach ($data as $bab){ ?>
+                                    <tr>
+                                <td>{{$bab['id_bab']}}</td>
+                                <td>{{$bab['id_buku']}}</td>
+                                <td>{{$bab['bab']}}</td>
+                                <td>{{$bab['judul']}}</td>
+                                <td>{{$bab['keterangan']}}</td>
+                                <td class="text-nowrap">
+                                    <a href="/dashboard/bab/hapus/{{$bab['id_bab']}}" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="/dashboard/bab/form/{{$bab['id_bab']}}" class="btn btn-warning btn-sm">Update</a>
+                                </td>
+                                </tr>
+                                <?php } ?>
+
+                            </tbody>
+                        </table>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Tambah</button>
-                    </form>
+                    </div>
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -119,9 +119,10 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
+                
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="/dashboard/logout">Logout</a>
                 </div>
             </div>
         </div>

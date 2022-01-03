@@ -4,9 +4,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    
                 </div>
-                <div class="sidebar-brand-text mx-3"><p>TPQ DIGITAL</p></div>
+                <div class="sidebar-brand-text mx-3"><p>TPQ AL-MUBAROQ</p></div>
             </a>
 
             <!-- Divider -->
@@ -22,25 +22,11 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
+               <!-- Nav Item - Tables -->
+               <li class="nav-item">
                 <a class="nav-link" href="/dashboard">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-table"></i>
                     <span>Santri</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="/dashboard/kemajuan">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kemajuan</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="/dashboard/detailKemajuan">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Detail Kemajuan</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -56,7 +42,42 @@
                 <i class="fas fa-fw fa-table"></i>
                 <span>Buku</span></a>
             </li>
+            
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/kemajuan">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Kemajuan</span></a>
+            </li>
 
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/detailKemajuan">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Detail Kemajuan</span></a>
+            </li>
+
+            
+
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="/dashboard/bab">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Bab</span></a>
+            </li>
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="/dashboard/peran">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Peran</span></a>
+            </li>
+
+              <!-- Nav Item - Charts -->
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard/detailperan">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Detail Peran</span></a>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

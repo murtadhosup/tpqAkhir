@@ -35,9 +35,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Us</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
@@ -71,7 +69,7 @@
         <h1>
           TPQ AL-MUBAROQ
         </h1>
-        <h2>AYO KITA <strong>MONDOK</strong> - <span>MENUNTUT</span> ILMU AGAMA</h2>
+        <h2>AYO KITA <strong>MONDOK</strong> <span>MENUNTUT</span> ILMU AGAMA</h2>
 <p>PARA PENUNTUT ILMU  adalah mereka yang pernah meninggalkan kehangatan dekapan kasih-sayang orang tua di rumah, dan bergabung hidup di lingkungan keilmuan (akademis) bersama pembina, pengasuh, kyai, ustadz-ustadzah,  dan saudara-saudara penuntut ilmu lainnya. Setiap hari,  disibukkan dengan kegiatan  mengaji banyak kitab (buku-buku), 
 	belajar tata-laku (adab) serta berbagai keterampilan hidup dari para ulama (kiyai) dan pembina lainnya.</p>
       </section>
